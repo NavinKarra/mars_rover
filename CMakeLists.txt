@@ -18,7 +18,8 @@ FetchContent_MakeAvailable(googletest)
 add_executable(c___skeleton src/main.cpp)
 
 add_executable(c___skeleton_test
-        test/dummy_test.cpp)
+        test/dummy_test.cpp
+        test/initialise_test.cpp)
 
 target_link_libraries(c___skeleton_test
         PRIVATE
