@@ -4,5 +4,7 @@ cmake-build-*/
 # CLion / JetBrains
 .idea/
 
+build
+
 # macOS
 .DS_Store
