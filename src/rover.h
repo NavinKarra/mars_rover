@@ -6,16 +6,29 @@ struct Coordinates {
         return x == other.x && y == other.y;
     }
 };
+
+enum Direction {
+    NORTH,
+    INVALID_DIRECTION,
+};
 class Rover {
     private:
         Coordinates m_coordinates;
+        Direction m_direction;
+
     public:
     
-        Rover(int x,int y) {
+        Rover(int x,int y, Direction direction) {
             m_coordinates.x = x;
             m_coordinates.y = y;
+            m_direction = direction;
+
         }
         Coordinates getPosition() {
             return m_coordinates;
+        }
+
+        Direction getDirection(){
+            return m_direction;
         }
 };

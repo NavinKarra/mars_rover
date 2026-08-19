@@ -4,6 +4,9 @@ cmake-build-*/
 # CLion / JetBrains
 .idea/
 
+# VScode
+.vscode/
+
 build
 
 # macOS
