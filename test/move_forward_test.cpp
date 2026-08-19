@@ -7,3 +7,9 @@ TEST(test_move_forward, move_forward_facing_north)
     rover.command("F");
     EXPECT_EQ((Coordinates {1,2}), rover.getPosition());
 }
+
+TEST(test_move_forward, move_forward_facing_east) {
+    Rover rover(1,1,EAST);
+    rover.command("F");
+    EXPECT_EQ((Coordinates {2,1}), rover.getPosition());
+}

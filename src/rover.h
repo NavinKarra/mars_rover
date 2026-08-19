@@ -10,6 +10,7 @@ struct Coordinates {
 
 enum Direction {
     NORTH,
+    EAST
 };
 class Rover {
     private:
@@ -32,6 +33,13 @@ class Rover {
             return m_direction;
         }
         void command(std::string command){
-            m_coordinates.y +=1 ;
+            if (m_direction == NORTH)
+            {
+                m_coordinates.y +=1 ;
+            }
+            else 
+            {
+                m_coordinates.x +=1;
+            }
         }
 };
