@@ -10,7 +10,8 @@ struct Coordinates {
 
 enum Direction {
     NORTH,
-    EAST
+    EAST,
+    SOUTH,
 };
 class Rover {
     private:
@@ -37,9 +38,12 @@ class Rover {
             {
                 m_coordinates.y +=1 ;
             }
-            else 
+            else if (m_direction == EAST)
             {
                 m_coordinates.x +=1;
+            }
+            else {
+                m_coordinates.y -=1 ;
             }
         }
 };
