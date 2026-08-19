@@ -34,16 +34,19 @@ class Rover {
             return m_direction;
         }
         void command(std::string command){
-            if (m_direction == NORTH)
+            switch(m_direction)
             {
-                m_coordinates.y +=1 ;
-            }
-            else if (m_direction == EAST)
-            {
-                m_coordinates.x +=1;
-            }
-            else {
-                m_coordinates.y -=1 ;
+                case NORTH: 
+                    m_coordinates.y +=1 ;
+                    break;
+                case EAST:
+                    m_coordinates.x +=1;
+                    break;
+                case SOUTH:
+                    m_coordinates.y -=1;
+                    break;
+                default:
+                    break;
             }
         }
 };
