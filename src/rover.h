@@ -9,7 +9,6 @@ struct Coordinates {
 
 enum Direction {
     NORTH,
-    INVALID_DIRECTION,
 };
 class Rover {
     private:
