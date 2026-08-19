@@ -20,7 +20,8 @@ add_executable(c___skeleton
         src/rover.h)
 
 add_executable(c___skeleton_test
-        test/initialise_test.cpp)
+        test/initialise_test.cpp
+        test/move_forward_test.cpp)
 
 target_link_libraries(c___skeleton_test
         PRIVATE

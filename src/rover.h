@@ -1,3 +1,4 @@
+#include <string>
 struct Coordinates {
     int x;
     int y;
@@ -29,5 +30,8 @@ class Rover {
 
         Direction getDirection(){
             return m_direction;
+        }
+        void command(std::string command){
+            m_coordinates.y +=1 ;
         }
 };
