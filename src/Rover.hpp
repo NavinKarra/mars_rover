@@ -3,8 +3,9 @@
 class Rover
 {
 public:
-    Rover(int x)
+    Rover(int x, int y)
     : m_x(x)
+    , m_y(y)
     {}
 
 
@@ -12,6 +13,12 @@ public:
     {
         return m_x;
     }
+
+    int getYPosition()
+    {
+        return m_y;
+    }
 private:
     int m_x;
+    int m_y;
 };

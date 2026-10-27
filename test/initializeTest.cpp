@@ -4,7 +4,8 @@
 
 TEST(InitializeRover, SuccessfulInitialization)
 {
-    Rover rover(3);
+    Rover rover(3, 4);
     EXPECT_EQ(rover.getXPosition(), 3);
+    EXPECT_EQ(rover.getYPosition(), 4);
 }
 
