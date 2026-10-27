@@ -18,12 +18,11 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_executable(c___skeleton
-        src/main.cpp
-        src/rover.h)
+        src/main.cpp)
 
 add_executable(c___skeleton_test
-        test/initialise_test.cpp
-        test/move_forward_test.cpp)
+        test/initializeTest.cpp
+)
 
 target_link_libraries(c___skeleton_test
         PRIVATE

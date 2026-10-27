@@ -3,7 +3,7 @@
 This sample downloads and runs a prebuilt Mars Rover executable from a **public**
 GitHub Release. Customers need no GitHub account, Git, CMake, or compiler. It uses
 the shell, curl, and standard macOS/Linux utilities, including a SHA-256 tool.
-Windows needs a separate PowerShell launcher.
+Windows uses a batch launcher and the built-in `curl.exe` and `certutil.exe`.
 
 ## Try It
 
@@ -12,6 +12,9 @@ After publishing compatible release assets, run from the project directory:
 ```sh
 sh scripts/run-rover.sh
 ```
+
+On Windows, run `scripts\run-rover.bat` from Command Prompt. It downloads and
+verifies the Windows x86-64 release in the same way as the shell launcher.
 
 The script defaults to `NavinKarra/mars_rover`. Send the configured script once;
 customers can run it with `sh run-rover.sh` without setting any variables.
